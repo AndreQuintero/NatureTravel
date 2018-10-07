@@ -12,6 +12,7 @@ body{
     background-attachment: fixed;
     height: 100vh;
     width: 100%;
+    
 }
 
 .paisage::after{
@@ -22,6 +23,7 @@ body{
     left:0;
     right:0;
     background-color:rgba(0,0,0,.2);
+    height: 100%;
 }
 
 .paisage-text{
@@ -79,6 +81,7 @@ body{
     -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
     clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
     background-attachment: fixed;
+   
 
 }
 .paris::after{
@@ -89,6 +92,7 @@ body{
     left:0;
     right:0;
     background-color:rgba(0,0,0,.6);
+    height: 100%;
 }
 
 .paris-text{
@@ -180,7 +184,7 @@ figcaption{
 
 
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
     @-webkit-keyframes car-animation {
         0%   { left: -275px; }
         100% {left: 110%;}
@@ -193,6 +197,9 @@ figcaption{
     }
     .carro-andando{
         left: -275px;
+    }
+    .paris-text{
+        margin-top: 20%;
     }
    
 }
@@ -223,23 +230,23 @@ figcaption{
 
 .arvore-1{
     -webkit-animation-name: arvore-1-mov; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 3.5s; /* Safari 4.0 - 8.0 */
     -webkit-animation-delay: 0s; /* Safari 4.0 - 8.0 */
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
     animation-name: arvore-1-mov;
-    animation-duration: 4s;
+    animation-duration: 3.5s;
     animation-delay: 0s;
 }
 
 .arvore-2{
     -webkit-animation-name: arvore-2-mov; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 3.5s; /* Safari 4.0 - 8.0 */
     -webkit-animation-delay: 0.7s; /* Safari 4.0 - 8.0 */
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
     animation-name: arvore-2-mov;
-    animation-duration: 4s;
+    animation-duration: 3.5s;
     animation-delay: 0.7s;
     right: -300px;
 }
