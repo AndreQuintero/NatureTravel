@@ -1,0 +1,70 @@
+.menu{
+    background-color: #FE4634;
+    position: fixed;
+    z-index: 100;
+   
+   }
+   
+   ul{
+       float: right;
+       font-size: 1.3rem;
+       color: #fff;
+       margin-top: 10px;
+   }
+   li{
+       display: inline;
+       padding: 4%;
+     /* */
+     cursor: pointer;
+     border-left: 2px solid #fff; 
+    
+   }
+    li:first-child{
+        border-left: none; 
+    }
+   
+   
+   a{
+       color: inherit;
+       
+   }
+    a:hover{
+        color: black;
+        
+    }
+
+   a:link{
+    text-decoration: none;
+   }
+  
+  
+
+   
+   @media only screen and (min-width: 768px) {
+       .menu{
+           position: absolute;
+       }
+   }
+
+
+
+
+   .social{
+    color:#fff;
+    cursor: pointer;
+    font-size: 36px;
+    padding: 2px;
+}
+
+.social:hover{
+   color:  #F26522
+}
+
+.txtFooter{
+    color: #fff;
+}
+
+.txtFooter h1{
+    font-weight: 700;
+    font-size: 3.0rem;
+}

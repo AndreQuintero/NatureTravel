@@ -1,0 +1,297 @@
+body{
+    
+    font-family: 'Open Sans', sans-serif !important;
+    background-color: #e3e8eb;
+}
+
+
+
+.paisage{
+    background-image: url("../img/mountain.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+}
+
+.paisage::after{
+    content:'';
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color:rgba(0,0,0,.2);
+}
+
+.paisage-text{
+    color: #fff;
+    position: absolute;
+    margin-top: 20%;
+    z-index: 20;
+    text-align: center;
+} 
+
+.paisage-text h1{
+    font-size: 3.8rem;
+    font-weight: 700;
+}
+
+
+
+.trips-text{
+    text-align: center;
+    color:#4B0082;
+}
+
+.trips-text h1{ 
+    font-size: 3.0rem;
+    font-weight: 700;
+   
+} 
+
+.container-trips{
+    
+    padding-bottom: 5%;
+    border-radius: 1%;
+    border: none;
+}
+
+.trip-container-text{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: #fff;
+    margin-top: -5%;
+    border: none;
+    border-radius: 5px 5px 5px 5px; 
+    
+}
+
+.trip-text-in-container{
+    margin: 5%;
+    text-align: left;
+}
+
+.trip-image{
+    background-image: url("../img/paris.jpg");
+    background-size: cover;
+    height: 400px;
+    -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+    background-attachment: fixed;
+
+}
+.paris::after{
+    content:'';
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color:rgba(0,0,0,.6);
+}
+
+.paris-text{
+    color: #fff;
+    position: absolute;
+    margin-top: 10%;
+    z-index: 20;
+    text-align: center;
+}
+
+.paris-text h1{
+    font-size: 3.8rem;
+    font-weight: 700;
+}
+
+.because{
+    text-align: center;
+    font-weight: 700;
+    color: #0a1e3d;
+}
+
+.because h1{
+    font-size: 3.0rem;
+}
+
+.travel_is_good{
+    padding-top: 5%;
+    padding-bottom: 2%;
+    background-color: #fff;
+    
+    border: none;
+    border-radius: 5px 5px 5px 5px; 
+}
+.is_good_in_container{
+    margin: 5%;
+    margin-top: 0%;
+    text-align: center;
+    color: black;
+
+}
+
+.is_good_in_container h4 {
+    font-weight: 700;
+}
+
+.is_good_in_container h1 {
+    font-weight: 700;
+}
+
+figcaption{
+    color:#0a1e3d;
+    font-weight: 700;
+    padding-top: 5px;
+}
+
+.carro-andando{
+   
+    position: relative;
+    -webkit-animation-name: car-animation; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-delay: 0s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    animation-name: car-animation;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    
+   
+}
+
+ 
+@media only screen and (min-width: 992px) {
+    @-webkit-keyframes car-animation {
+        0%   { left:-275px; }
+        100% { left: 110%;}
+    }
+
+    
+    @keyframes car-animation {
+        0%   { left:-275px; }
+        100% {left: 110%;}
+    }
+    .carro-andando{
+        left: -275px;
+    }
+   
+}
+
+
+
+
+@media only screen and (min-width: 768px) {
+    @-webkit-keyframes car-animation {
+        0%   { left: -275px; }
+        100% {left: 110%;}
+    }
+
+    
+    @keyframes car-animation {
+        0%   { left:-275px; }
+        100% {left: 110%;}
+    }
+    .carro-andando{
+        left: -275px;
+    }
+   
+}
+
+@media only screen and (min-width: 600px) {
+
+    
+}
+
+
+
+
+
+.fig{
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.fig:hover{
+    transform: scale(1.1);
+}
+
+.car-image{
+    bottom: -90px;
+   
+ 
+}
+
+.arvore-1{
+    -webkit-animation-name: arvore-1-mov; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-delay: 0s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    animation-name: arvore-1-mov;
+    animation-duration: 4s;
+    animation-delay: 0s;
+}
+
+.arvore-2{
+    -webkit-animation-name: arvore-2-mov; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-delay: 0.7s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    animation-name: arvore-2-mov;
+    animation-duration: 4s;
+    animation-delay: 0.7s;
+    right: -300px;
+}
+
+@-webkit-keyframes arvore-1-mov {
+    0%   { right: -300px; }
+    100% {right:  110%;}
+}
+
+
+@keyframes arvore-1-mov {
+    0%   { right: -300px; }
+    100% {right:  110%;}
+}
+
+@-webkit-keyframes arvore-2-mov {
+    0%   { right: -300px; }
+    100% {right:  110%;}
+}
+
+
+@keyframes arvore-2-mov {
+    0%   { right: -300px; }
+    100% {right:  110%;}
+}
+
+.sky{
+    background-color: rgba(	30,144,255, 0.5);
+    border-radius:50% 50% 0% 0%; 
+}
+
+.car{
+    -webkit-animation-name: car-mov; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-delay: 0s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    animation-name: car-mov;
+    animation-duration: 2s;
+    animation-delay: 0s;
+}
+
+@-webkit-keyframes car-mov {
+    0%   { left: 0px; }
+    50% { left:  30px;}
+    100%{ left: 0px;}
+}
+
+
+@keyframes car-mov {
+    0%   { left: 0px; }
+    50% { left:  30px;}
+    100%{ left: 0px;}
+}
+
